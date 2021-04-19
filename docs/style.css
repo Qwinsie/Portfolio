@@ -1,0 +1,130 @@
+h1, p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    color:rgb(0, 0, 0);
+    background-color: rgb(138, 43, 43);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a { 
+    text-decoration: none;
+} 
+
+a:visited { text-decoration: none; color:rgb(87, 126, 255); }
+a:hover { text-decoration: none; color:rgb(115, 36, 241); }
+a:focus { text-decoration: none; color:rgb(176, 248, 255); }
+a:hover, a:active { text-decoration: none; color:rgb(115, 36, 241) }
+  
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(144, 217, 251);
+}
+
+
+.container {
+    display: flex;
+  }
+
+.flex-child {
+    flex: 1;
+    border: 2px solid rgb(184, 184, 184);
+    margin: 20px 100px 20px 100px;
+}  
+
+/*Projects*/
+
+#list {
+    background-color: rgb(138, 43, 43);
+    padding: 10px;
+}
+
+img {
+    opacity: 0.75;
+    width: 400px;
+}
+
+/*Project*/
+.project{
+    display: flex;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background-color: rgb(163, 62, 62);
+    border: 3px solid rgb(92, 0, 0);
+    margin: 10px 10px 30px 10px;
+    font-size: 50px;
+    border-radius: 5px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.project .more-button {
+    /* position: absolute; */
+    text-align: center;
+    top: 50px;
+    left: 50px;
+    transition: 0.5s;
+}
+
+.project * {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.project .name {
+    font-size: 70px;
+}
+
+ul * button {
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 5px;
+    font-size: 12pt;
+    margin-bottom: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.project .more-button:after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.project .more-button:hover{
+    padding-right: 25px;
+}
+
+.project .more-button:hover:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*Navigator*/
+
+nav .nav-button {
+    background-color: #4c8baf;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-button:hover{
+    background-color: #3e758e;
+}
+ul {
+    list-style-type: none;
+}

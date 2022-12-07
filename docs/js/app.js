@@ -88,6 +88,95 @@ window.addEventListener("load", () => {
                     },
                 
             },
+            {
+                id: 6,
+                name: "WaterMappie",
+                keywords: ["Mapbox API","ReactJS","HTML","SCSS","JS", "MongoDB"],
+                startdate: "02-2022",
+                enddate: "04-2022",
+                contributors: ["Quincy van der Sluis", "Tom Faust", "Rik Vermeulen", "Manuja Jaggan", "Niek Rottier"],
+                description: "",
+                links: 
+                    {
+                        video: "https://www.youtube.com/watch?v=i_jYAxYEGq8",
+                        github: "https://github.com/TomFaust/Medialab-Interactive_map",
+                    },
+                
+            },
+            {
+                id: 7,
+                name: "SeaBeat",
+                keywords: ["C#","Unity","Game"],
+                startdate: "08-2022",
+                enddate: "10-2022",
+                contributors: ["Quincy van der Sluis", "Amber Ustun", "Jimmy Balgobiend", "Kylian Schuilenburg", "Kayleigh Huijsman"],
+                description: "Mobile Rhythm Game on the Playstore",
+                links: 
+                    {
+                        game: "https://play.google.com/store/apps/details?id=com.NeoNovaStudios.SeaBeat",
+                        itch_io: "https://neonova-studios.itch.io/seabeat"
+                    },
+                
+            },
+            {
+                id: 8,
+                name: "Treasure Hunt",
+                keywords: ["Game","DOM","HTML","CSS","JS"],
+                startdate: "02-2022",
+                enddate: "06-2022",
+                contributors: ["Quincy van der Sluis"],
+                description: "",
+                links: 
+                    {
+                        demo: "https://qwinsie.github.io/treasure_hunt/",
+                        video: "https://www.youtube.com/watch?v=G6vA3WLlfP0",
+                        github: "https://github.com/Qwinsie/treasure_hunt",
+                    },
+                
+            },
+            {
+                id: 9,
+                name: "A Poets Dilemma",
+                keywords: ["Game","Unity","C#"],
+                startdate: "02-2022",
+                enddate: "02-2022",
+                contributors: ["Quincy van der Sluis", "Bogdan Golea", "Hannes"],
+                description: "Platformer",
+                links: 
+                    {
+                        game: "https://qwinsie.itch.io/poets-dillema",
+                    },
+                
+            },
+            {
+                id: 10,
+                name: "Gloomwalker",
+                keywords: ["Game","Unity","C#"],
+                startdate: "08-2022",
+                enddate: "08-2022",
+                contributors: ["Quincy van der Sluis", "Tijs de Graaff", "Scott Reingoud"],
+                description: "Turnbased Fantasy Fighting Simulator",
+                links: 
+                    {
+                        game: "https://qwinsie.itch.io/poets-dillema",
+                    },
+                
+            },
+            {
+                id: 11,
+                name: "Screen Green Machine",
+                keywords: ["ReactJS","Mapbox API",""],
+                startdate: "02-2021",
+                enddate: "06-2021",
+                contributors: ["Quincy van der Sluis", "Daphne Bruggeman", "Luuk's Gravendijk", "Marc van der Made", "Gertjan Egas"],
+                description: "",
+                links: 
+                    {
+                        github: "https://github.com/gert1999/ScreenGreenMachine",
+                        video: "https://www.youtube.com/watch?v=KgFBbAZ0B_Y"
+                    },
+                
+            },
         ]
     
     console.log(projects)

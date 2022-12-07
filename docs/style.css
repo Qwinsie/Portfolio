@@ -4,7 +4,7 @@ h1, p {
 
 body {
     color:rgb(0, 0, 0);
-    background-color: rgb(138, 43, 43);
+    background-color: rgb(13, 0, 50);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -36,7 +36,7 @@ a:hover, a:active { text-decoration: none; color:rgb(115, 36, 241) }
 /*Projects*/
 
 #list {
-    background-color: rgb(138, 43, 43);
+    background-color: rgb(36, 0, 94);
     padding: 10px;
 }
 
@@ -50,8 +50,8 @@ img {
     display: flex;
     position: relative;
     color: rgb(255, 255, 255);
-    background-color: rgb(163, 62, 62);
-    border: 3px solid rgb(92, 0, 0);
+    background-color: rgb(62, 85, 163);
+    border: 3px solid rgb(0, 29, 92);
     margin: 10px 10px 30px 10px;
     font-size: 50px;
     border-radius: 5px;
@@ -123,7 +123,7 @@ nav .nav-button {
 }
 
 .nav-button:hover{
-    background-color: #3e758e;
+    background-color: #181853;
 }
 ul {
     list-style-type: none;

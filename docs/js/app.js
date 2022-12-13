@@ -39,6 +39,7 @@ window.addEventListener("load", () => {
                 description: "",
                 links: 
                     {
+                        demo: "http://devenvironment.nl/",
                         github: "https://github.com/rikvermeulen/A-message-of-peace",
                         video: "https://youtu.be/9pbDAUNFC78",
                     },

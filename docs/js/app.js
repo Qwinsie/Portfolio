@@ -1,9 +1,10 @@
 window.addEventListener("load", () => {
     let projects =  [
             {
-                id: 0,
+                id: 7,
+                image: 0,
                 name: "PokéDraw",
-                keywords: ["ml5","HTML","CSS","JS"],
+                keywords: ["AI", "ml5","HTML","CSS","JS"],
                 startdate: "28-03-2021",
                 enddate: "19-04-2021",
                 contributors: ["Quincy van der Sluis"],
@@ -16,7 +17,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 1,
+                id: 8,
+                image: 1,
                 name: "ReviewAPI",
                 keywords: ["RESTAPI","MERN","MongoDB","Express","React","npm"],
                 startdate: "16-11-2020",
@@ -30,7 +32,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 2,
+                id: 9,
+                image: 2,
                 name: "Message of Peace",
                 keywords: ["PHP","Laravel","HTML","CSS","JS","Bootstrap","Uganda","Interactive Web Application"],
                 startdate: "31-08-2020",
@@ -46,7 +49,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 3,
+                id: 10,
+                image: 3,
                 name: "Gamehub",
                 keywords: ["PHP","Laravel","MYSQL"],
                 startdate: "31-08-2020",
@@ -60,7 +64,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 4,
+                id: 11,
+                image: 4,
                 name: "B.O.B Game",
                 keywords: ["Typescript","DOM","HTML","CSS","Game"],
                 startdate: "15-04-2020",
@@ -75,7 +80,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 5,
+                id: 12,
+                image: 5,
                 name: "PONG",
                 keywords: ["Typescript","DOM","HTML","CSS","Game"],
                 startdate: "15-04-2020",
@@ -90,7 +96,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 6,
+                id: 5,
+                image: 6,
                 name: "WaterMappie",
                 keywords: ["Mapbox API","ReactJS","HTML","SCSS","JS", "MongoDB"],
                 startdate: "02-2022",
@@ -105,7 +112,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 7,
+                id: 1,
+                image: 7,
                 name: "SeaBeat",
                 keywords: ["C#","Unity","Game"],
                 startdate: "08-2022",
@@ -120,7 +128,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 8,
+                id: 3,
+                image: 8,
                 name: "Treasure Hunt",
                 keywords: ["Game","DOM","HTML","CSS","JS"],
                 startdate: "02-2022",
@@ -136,7 +145,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 9,
+                id: 4,
+                image: 9,
                 name: "A Poets Dilemma",
                 keywords: ["Game","Unity","C#"],
                 startdate: "02-2022",
@@ -150,7 +160,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 10,
+                id: 2,
+                image: 10,
                 name: "Gloomwalker",
                 keywords: ["Game","Unity","C#"],
                 startdate: "08-2022",
@@ -164,7 +175,8 @@ window.addEventListener("load", () => {
                 
             },
             {
-                id: 11,
+                id: 6,
+                image: 11,
                 name: "Screen Green Machine",
                 keywords: ["ReactJS","Mapbox API",""],
                 startdate: "02-2021",
@@ -180,17 +192,18 @@ window.addEventListener("load", () => {
             },
         ]
     
-    console.log(projects)
-    const list = document.getElementById("list")
+        const list = document.getElementById("list")
+        let sortedProjects = projects.sort((p1, p2) => (p1.id > p2.id) ? 1 : (p1.id < p2.id) ? -1 : 0);
+        console.log(sortedProjects)
 
-    for (let i = 0; i < projects.length; i++){
-        const project = projects[i]
+    for (let i = 0; i < sortedProjects.length; i++){
+        const project = sortedProjects[i]
         const li = document.createElement('li');
         li.className = "project"
         list.append(li);
         const img = document.createElement('img');
         li.append(img)
-        img.setAttribute("src", `./img/${i}.png`)
+        img.setAttribute("src", `./img/${sortedProjects[i].image}.png`)
         const details = document.createElement('ul');
         details.className = "details"
         li.append(details)
